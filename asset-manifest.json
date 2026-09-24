@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.82ed3996.css",
+    "main.js": "/my-portfolio/static/js/main.b4ee8edc.js",
+    "static/media/hnguLogo.png": "/my-portfolio/static/media/hnguLogo.7058c2e4055836542eb8.png",
+    "static/media/schoolLogo.png": "/my-portfolio/static/media/schoolLogo.de226e496a87dabda934.png",
+    "static/media/dp.jpeg": "/my-portfolio/static/media/dp.adf0b46dc07b5ea31b11.jpeg",
+    "static/media/c1.png": "/my-portfolio/static/media/c1.f5abfa0bbb71fe9cb9e8.png",
+    "static/media/c2.png": "/my-portfolio/static/media/c2.636a3632d923c7bb25e7.png",
+    "static/media/kindpng_2158189.png": "/my-portfolio/static/media/kindpng_2158189.84e4b1cbbc313949056f.png",
+    "static/media/c3.png": "/my-portfolio/static/media/c3.ba412d7615d8367efa2c.png",
+    "static/media/c4.png": "/my-portfolio/static/media/c4.2ff88e10ca22606edae8.png",
+    "static/media/c5.png": "/my-portfolio/static/media/c5.c20d13cee898b4c4a736.png",
+    "static/media/project-cover10.png": "/my-portfolio/static/media/project-cover10.aee0f771fbfc1e7b8fa8.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.82ed3996.css.map": "/my-portfolio/static/css/main.82ed3996.css.map",
+    "main.b4ee8edc.js.map": "/my-portfolio/static/js/main.b4ee8edc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82ed3996.css",
+    "static/js/main.b4ee8edc.js"
+  ]
+}
