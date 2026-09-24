@@ -29,6 +29,7 @@
 
 @media (max-width: 768px) {
     .socialText {
-        font-size: 0.95rem; /* Mobile screen par responsive text size */
+        font-size: 0.82rem; /* Mobile screen par responsive text size */
+        margin-left: 0rem;
     }
 }

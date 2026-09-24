@@ -165,25 +165,25 @@ main {
     /* Mobile responsive navbar 4rem + marquee banner adjustment */
     .hiringMarquee {
         top: 4rem; 
-        height: 2.2rem;
-        font-size: 0.85rem;
+        height: 2rem;
+        font-size: 0.75rem;
     }
 
     .homeContent {
-        margin-top: 4.5rem; /* Mobile layout optimization */
-        width: 80%;
+        margin-top: 2rem; /* Mobile layout optimization */
+        width: 85%;
     }
     
     .homeContent h1 {
-        font-size: 1.5rem;
+        font-size: 1.30rem;
     }
     
     .homeContent h2 {
-        font-size: 2rem;
+        font-size: 1.30rem;
     }
     
     .autoText {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     /* 🚀 MERGED MOBILE: Purani avatarImage classes yahan se hatakar clean .avatar kiya */
@@ -195,8 +195,8 @@ main {
     }
 
     .avatar img {
-        height: 12rem;
-        width: 12rem;
+        height: 10rem;
+        width: 10rem;
         margin-top: 0; /* Reset desktop top margin for mobile */
         
         /* Mobile settings mapped to the same animation loop */
@@ -206,6 +206,7 @@ main {
     
     .connectText {
         margin-top: 1rem;
+        font-size: 1.2rem;
     }
     
     .links {
