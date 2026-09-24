@@ -1,0 +1,292 @@
+.centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar {
+	height: 5rem;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	z-index: 1000;
+}
+.logoContainer {
+	margin-right: auto;
+	margin-left: 5%;
+	font-size: 2rem;
+}
+#logo{
+	font-family: "Alex Brush";
+}
+.navsContainer {
+	display: flex;
+	gap: 1rem;
+	margin-left: auto;
+	flex-wrap: wrap;
+	margin-right: 1rem;
+}
+.navsContainer a{
+	text-decoration: none;
+}
+.navs {
+	width: max-content;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	font-size: 1.1rem;
+}
+.active {
+	font-size: 1.1rem;
+	border-bottom-left-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+	border-bottom: 3px solid purple;
+	border-radius: 0.5rem;
+}
+.navs:hover{
+	cursor: pointer;
+	background-color: purple;
+	color: white;
+	filter: brightness(110%);
+}
+/* Custom styling sirf Resume tab ko permanently active rakhne ke liye */
+.resume-btn {
+	font-size: 1.1rem;
+	border-radius: 0.5rem;
+	background-color: purple !important;
+	color: white !important;
+	filter: brightness(110%);
+	cursor: pointer;
+}
+.resume-btn:hover {
+	filter: brightness(125%);
+	box-shadow: 0 4px 10px rgba(128, 0, 128, 0.3); 
+}
+
+.selectTheme {
+	margin-right: 2rem;
+	display: flex;
+	align-items: center;
+	width: 5rem;
+	justify-content: space-around;
+}
+.colorSelector {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+}
+.colorSelector:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.selectMode {
+	background-color: rgb(146, 15, 178);
+	width: 5rem;
+	height: 2rem;
+	border-radius: 1rem;
+	display: none;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.selectMode:hover {
+	cursor: pointer;
+}
+#lightModeBtn {
+	margin-left: 0.5rem;
+	margin-right: auto;
+}
+#darkModeBtn {
+	margin-left: auto;
+	margin-right: 0.5rem;
+}
+.selectTheme input{
+	display: none;
+}
+.menu,.mob-nav {
+	display: none;
+}
+.centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE VIEW ONLY: Fully Redesigned for Fit Size & Premium Vibe
+   ========================================================================== */
+@media (max-width: 768px) {
+	.navbar {
+		height: 4rem;
+	}
+	.logoContainer {
+		margin-left: 1rem;
+		font-size: 1.5rem;
+	}
+	.navsContainer {
+		display: none;
+	}
+	.selectTheme {
+		width: 10rem;
+		margin-left: auto;
+		margin-right: 1rem;
+	}
+	.colorSelector {
+		margin-left: 1rem;
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+	.selectMode {
+		display: flex;
+		width: 4rem;
+		height: 1.8rem;
+	}
+	#burger-toggle {
+		position: relative;
+		appearance: none;
+		opacity: 0;
+	}
+	#burger-toggle:checked ~ .menu {
+		opacity: 1;
+		visibility: visible;
+	}
+	#burger-toggle:checked ~ .menu .menu-nav-link span div,
+	#burger-toggle:checked ~ .menu img,
+	#burger-toggle:checked ~ .menu .title p {
+		transform: translateY(0);
+		transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+	}
+	#burger-toggle:checked ~ .menu .image-link:nth-child(1) img { transition-delay: 0.18s; }
+	#burger-toggle:checked ~ .menu .image-link:nth-child(2) img { transition-delay: 0.26s; }
+	#burger-toggle:checked ~ .menu .image-link:nth-child(3) img { transition-delay: 0.34s; }
+	#burger-toggle:checked ~ .menu .image-link:nth-child(4) img { transition-delay: 0.42s; }
+	
+	#burger-toggle:checked ~ .burger-menu .line::after {
+		transform: translateX(0);
+	}
+	#burger-toggle:checked ~ .burger-menu .line:nth-child(1) {
+		transform: translateY(calc(var(--burger-menu-radius) / 5)) rotate(45deg);
+	}
+	#burger-toggle:checked ~ .burger-menu .line:nth-child(2) {
+		transform: scaleX(0);
+	}
+	#burger-toggle:checked ~ .burger-menu .line:nth-child(3) {
+		transform: translateY(calc(var(--burger-menu-radius) / -5)) rotate(-45deg);
+	}
+	.burger-menu {
+		--burger-menu-radius: 3em;
+		position: relative;
+		display: block;
+		width: var(--burger-menu-radius);
+		height: var(--burger-menu-radius);
+		outline: none;
+		cursor: pointer;
+		transition: all 1s ease-in-out;
+	}
+	.burger-menu .line {
+		position: absolute;
+		left: 25%;
+		width: 50%;
+		height: 3px;
+		background: purple;
+		border-radius: 10px;
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	.burger-menu .line:nth-child(1) { top: 30%; }
+	.burger-menu .line:nth-child(2) { top: 50%; }
+	.burger-menu .line:nth-child(3) { top: 70%; }
+	.burger-menu .line::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--primary-color-darker);
+		transform: translateX(-100%);
+		transition: 0.25s;
+	}
+	.burger-menu .line:nth-child(2)::after { transition-delay: 0.1s; }
+	.burger-menu .line:nth-child(3)::after { transition-delay: 0.2s; }
+	.burger-menu:hover .line::after { transform: translateX(0); }
+
+	/* 🚀 UPDATED: Modern Frosted Glass Floating Dropdown */
+		.mob-nav {
+		background-color: rgba(18, 18, 18, 0.85); /* Dark executive overlay */
+		backdrop-filter: blur(12px); /* High-end Apple style frosting blur */
+		-webkit-backdrop-filter: blur(12px);
+		position: fixed;
+		top: 4.2rem; /* Mobile navbar height (4rem) + exact 0.2rem elegant air gap */
+		right: 1rem;  /* Centered padding pull */
+		left: auto;
+		margin-top: 0;
+		
+		/* 🧠 SIZING FIXED: Auto height wrapped to items to prevent huge empty dead-space */
+		height: auto; 
+		width: calc(100% - 2rem); /* Auto flexible boundary card padding stretch */
+		max-width: 280px; /* Restricts extra wide stretching on tablets */
+		
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem; /* Perfectly packed minimal structural tracking grid */
+		border-radius: 1rem;
+		padding: 1rem;
+		box-sizing: border-box;
+		
+		/* Dynamic soft glow drop border line templates */
+		border: 1px solid rgba(128, 0, 128, 0.2); 
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(128, 0, 128, 0.15);
+		
+		/* Smooth fade and subtle bounce opening slide transition combo trigger */
+		animation: slideDownFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+		/* 🚀 FIXED: Is parameter se mobile dropdown screen ke absolute top edge stack vertical block par lock ho jayega */
+		z-index: 1005 !important; 
+	}
+
+	.mob-nav a {
+		text-decoration: none;
+		width: 100%;
+	}
+	
+	/* 🚀 UPDATED: Mobile list items padding adjustments */
+	.navs {
+		margin-top: 0 !important; /* Resets default desktop baseline offsets */
+		width: 100% !important; /* Text stretches fully to fill out the selection bar row */
+		box-sizing: border-box;
+		border-radius: 0.6rem;
+		padding: 0.7rem 1.2rem;
+		font-size: 1.05rem;
+		font-weight: 500;
+		text-align: left;
+		display: flex;
+		align-items: center;
+		transition: all 0.2s ease;
+		color: #ffffff !important; /* Solid readability fallback */
+	}
+	
+	/* 🚀 FIXED CAUSE: Disabled block removed so touch interactions are operational */
+	.navs { 
+		pointer-events: auto !important; 
+	}
+	
+	/* Active dynamic highlight styles for selection nodes in mobile layout stack */
+	.active {
+		background-color: rgba(237, 79, 237, 0.25) !important;
+		border-left: 4px solid purple !important; /* Left line focus indicators */
+		border-bottom: none !important; /* Desktop bottom line style override */
+		border-radius: 0.6rem;
+	}
+}
+
+/* 🚀 NEW ANIMATION: Premium elegant downward slide combined with an organic opacity fade */
+@keyframes slideDownFade {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

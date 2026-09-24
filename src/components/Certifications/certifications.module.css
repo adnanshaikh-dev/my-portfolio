@@ -1,0 +1,334 @@
+.certificationsMain {
+    text-align: center;
+    padding-top: 3rem;
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-margin-top: 3rem;
+}
+
+.sectionTitle {
+    font-size: 2.5rem !important;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.5rem;
+}
+
+/* 🚀 NEW INTRO PANEL CSS: High-fidelity readable text layouts */
+.certIntroPanel {
+    width:95%;
+    margin: 0 auto 3rem auto;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 1.02rem;
+}
+
+.certIntroPanel p {
+    margin-bottom: 1rem;
+    opacity: 0.85;
+    text-align: justify;
+}
+
+.topicsTextList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    max-width: 1000px;
+    margin: 0 auto 3.5rem auto;
+}
+
+.topicChip {
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 0.55rem 1.3rem;
+    border: 1.5px solid;
+    border-radius: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.topicChip:hover {
+    transform: translateY(-2px);
+}
+
+.activeChip {
+    font-weight: 800 !important;
+    transform: scale(1.02);
+}
+
+.dualWorkspaceGrid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    gap: 2.5rem;
+}
+
+/* LEFT COLUMN: Analytics metrics panel layout grids */
+.analyticsSidePanel {
+    width: 30%;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-radius: 1.25rem;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    transform: translateY(-2px);
+    border: 2px solid rgba(128, 0, 128, 0.5) !important; 
+    box-shadow: 0 15px 35px rgba(128, 0, 128, 0.25) !important;
+}
+
+.metricCard {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1.2rem;
+    border: 1px solid rgba(128, 0, 128, 0.25);
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: transform 0.25s ease;
+}
+
+.metricCard:hover {
+    transform: translateX(5px);
+}
+
+.metricIcon {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.metricTexts { text-align: left; }
+.metricTexts h3 { font-size: 1.15rem; font-weight: 800; margin: 0; }
+.metricTexts p { font-size: 0.85rem; font-weight: 600; opacity: 0.7; margin: 0.1rem 0 0 0; }
+
+/* RIGHT COLUMN: Slider Box wrapper container */
+.carouselFrameworkBox {
+    width: 65%;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    transform: translateY(-2px);
+    border: 2px solid rgba(128, 0, 128, 0.5) !important; 
+    box-shadow: 0 15px 35px rgba(128, 0, 128, 0.25) !important;
+}
+
+.sliderWindowView {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.certificateSlideContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 🚀 EXPANDED CANVAS AREA WITH OVERFLOW MASK HIDDEN */
+.certFramePhotoArea {
+    width: 100%;
+    height: 28rem; 
+    background-color: #ffffff; 
+    border-radius: 0.75rem;
+    overflow: hidden; 
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    position: relative;
+    will-change: transform;
+}
+
+/* Separate isolated dynamic image container layer track */
+.imageSliderWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSliderWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+/* ==========================================================================
+   🎬 🚀 TRUE HORIZONTAL PURE SLIDING MECHANICS: Old-School Cyclic Engine
+   ========================================================================== */
+.slideAnimationNext {
+    animation: pureNextSlide 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes pureNextSlide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+.slideAnimationPrev {
+    animation: purePrevSlide 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes purePrevSlide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.certMetaFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.8rem;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+.metaTextStack { display: flex; flex-direction: column; gap: 0.2rem; }
+.metaTextStack h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.3px; line-height: 1.3; }
+.metaTextStack h3 { font-size: 0.95rem; font-weight: 600; opacity: 0.85; }
+
+.footerActionControls {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; 
+    flex-shrink: 0;
+}
+
+.slideNavBtn {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 40%;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #ffffff !important; 
+    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.slideNavBtn:hover {
+    transform: translateY(-2px) scale(1.05);
+    filter: brightness(115%);
+}
+
+.slideNavBtn:active {
+    transform: translateY(0) scale(0.95);
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE VIEW ONLY: Precise Height Lock & Text Alignment Overwrites
+   ========================================================================== */
+@media (max-width: 992px) {
+    .dualWorkspaceGrid { flex-direction: column; gap: 2rem; }
+    .analyticsSidePanel { width: 100%; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap; }
+    .carouselFrameworkBox { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .certificationsMain { width: 92%; padding-top: 1rem; }
+    .sectionTitle { font-size: 1.80rem !important; margin-bottom: 1.5rem; }
+    
+    /* 🚀 FIXED MOBILE TEXT: text-align left completely resolves font spacing gaps */
+    .certIntroPanel {
+        font-size: 0.92rem;
+        margin-bottom: 2rem;
+    }
+    .certIntroPanel p {
+        text-align: left !important;
+        word-spacing: normal !important;
+        line-height: 1.5;
+    }
+
+    .topicsTextList { gap: 0.5rem; margin-bottom: 2rem; }
+    .topicChip { font-size: 0.82rem; padding: 0.4rem 1rem; }
+    .analyticsSidePanel { flex-direction: column; padding: 1rem; gap: 1rem; }
+    .metricCard { padding: 0.8rem; width: 100%; box-sizing: border-box; }
+    .metricTexts h3 { font-size: 1rem; font-weight: 800; margin: 0; }
+    .metricTexts p { font-size: 0.75rem; font-weight: 600; opacity: 0.7; margin: 0.1rem 0 0 0; }
+    
+    .carouselFrameworkBox { 
+        padding: 1rem; 
+        min-height: 25.5rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .certFramePhotoArea { 
+        height: 16rem; 
+        width: 100%;
+        flex-shrink: 0;
+    } 
+    
+    .certMetaFooter { 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        text-align: center !important; 
+        gap: 0.8rem !important; 
+        margin-top: 1rem !important;
+        width: 100% !important;
+        height: 6.5rem !important; 
+        min-height: 6.5rem !important;
+        justify-content: space-between !important;
+    }
+    
+    .metaTextStack {
+        width: 100% !important;
+        height: 3rem !important; 
+        overflow: hidden !important; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .metaTextStack h2 { 
+        font-size: 1.1rem !important; 
+        margin: 0 !important;
+        line-height: 1.3 !important;
+        font-weight: 700 !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .metaTextStack h3 { 
+        font-size: 0.85rem !important; 
+        margin: 0.2rem 0 0 0 !important;
+        opacity: 0.8;
+    }
+    
+    .footerActionControls { 
+        width: 100% !important; 
+        justify-content: center !important; 
+        gap: 1.5rem !important; 
+        margin-top: auto !important; 
+        height: 2.5rem !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .slideNavBtn { 
+        width: 2.6rem !important; 
+        height: 2.6rem !important; 
+        font-size: 1.3rem !important; 
+        transform: none !important; 
+    }
+}

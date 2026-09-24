@@ -1,0 +1,141 @@
+.educationHeader {
+    padding-top: 6rem;
+    display: flex;
+    align-items: center; /* 🚀 Aligns graphic vertically middle with the progress charts */
+    justify-content: space-between;
+    gap: 4rem;
+    width: 85%; /* 🚀 Width expanded to span the page nicely */
+    margin: 0rem auto;
+    font-family: 'Poppins', sans-serif; /* 🚀 Swapped to Poppins for professional text density */
+}
+
+.eduImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.eduImg img {
+    height: auto;
+    width: 100%;
+    max-width: 28rem;
+    object-fit: contain;
+    filter: drop-shadow(0px 10px 20px rgba(128, 0, 128, 0.15)); /* Elegant branding depth tint */
+}
+
+.educationCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 🚀 Left aligned items read infinitely more professional than centered lists */
+    width: 55%;
+}
+
+.educationCard h1 {
+    font-size: 3rem; /* 🚀 Scaled down from 5rem to stop messy wrap collapses */
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.educationCard h2 {
+    font-size: 1.4rem; /* 🚀 Scaled from 3rem to establish crisp corporate informational hierarchy */
+    font-weight: 600;
+    margin-top: -0.5rem;
+    opacity: 0.85;
+}
+
+.codingInfo {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* Clean vertical spacing between skills rows */
+}
+
+.progressBar {
+    display: flex;
+    flex-direction: column; /* 🚀 Swapped to vertical stacking. Tag on top, bar below looks cleaner */
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.4rem;
+}
+
+.progressBar label {
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Track layout wrapper block grouping */
+.trackWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.progressBar progress {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.75rem; /* 🚀 Slimmer bars look significantly more premium and dashboard-ready */
+}
+
+.progressBar progress::-webkit-progress-bar {
+    background-color: rgba(128, 0, 128, 0.12); /* Subtle theme trail track */
+    border-radius: 1rem;
+}
+
+.progressBar progress::-webkit-progress-value {
+    border-radius: 1rem;
+    background: linear-gradient(90deg, purple, #a121c1); /* Smooth dynamic linear fill */
+}
+
+/* 🚀 NEW: Clean informational numeric tag pill elements */
+.percentBadge {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+    min-width: 2.2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(128, 0, 128, 0.2);
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 768px) {
+    .educationHeader {
+        flex-direction: column;
+        width: 90%;
+        gap: 2rem;
+        padding-top: 4rem;
+    }
+    
+    .eduImg {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .eduImg img {
+        max-width: 16rem;
+    }
+    
+    .educationCard {
+        width: 95%;
+        align-items: center; /* Re-center header text items safely for mobile viewports */
+    }
+    
+    .educationCard h1 {
+        font-size: 2.5rem;
+    }
+    
+    .educationCard h2 {
+        font-size: 1.15rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,156 @@
+.contactMe{
+    /* padding-top: 1rem; */
+    margin: 0rem auto;
+    /* background-color: aqua; */
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    scroll-margin-top: 2rem;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: aquamarine; */
+    /* width: 50%; */
+}
+.avatar img{
+    margin-top: 2rem;
+    border: 5px solid;
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    /* animation: renderFromLeft 1s ease forwards; */
+}
+.contactCard{
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
+    /* animation: renderFromRight 1s ease forwards; */
+}
+.contactCard h1{
+    font-size: 3rem;
+}
+
+/* 🚀 ONLY THIS CLASS IS MODIFIED: Baaki sab bilkul same hai */
+.contactCard div{
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    white-space: pre-line; /* ✅ Yeh line breaks (\n) aur bullets ko unki alag rows mein layout karega */
+    text-align: left;     /* ✅ Bullets aur paragraphs ko ek ke neeche ek sahi format mein align karega */
+}
+
+.contactLinks{
+    display: flex;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+}
+.resumeBtn {
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    
+    /* Perfect Web Sizing & Padding */
+    padding: 0.8rem 2.2rem;
+    min-width: 14rem;
+    border-radius: 2rem; /* Smooth pill-shaped structure */
+    
+    /* Branding Colors & Styles */
+    background: linear-gradient(135deg, purple 0%, #a121c1 100%);
+    color: #ffffff !important;
+    border: none;
+    cursor: pointer;
+    
+    /* Premium Depth Glow */
+    box-shadow: 0 4px 15px rgba(128, 0, 128, 0.35);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 🚀 HOVER EFFECTS: Mouse le jaane par active glow and scaling */
+.resumeBtn:hover {
+    transform: translateY(-3px); /* Button thoda hawa mein uthega */
+    background: linear-gradient(135deg, #a121c1 0%, purple 100%); /* Color gradient invert hoga */
+    box-shadow: 0 8px 25px rgba(161, 33, 193, 0.6); /* Glow intense ho jayega */
+    filter: brightness(110%);
+}
+
+/* CLICK EFFECT: Button dabaane par push down feel */
+.resumeBtn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(128, 0, 128, 0.4);
+}
+
+@media (max-width:768px) {
+    .contactMe{
+        flex-direction: column;
+        padding-top: 3rem;
+        scroll-margin-top: 3rem;
+    }
+    .avatar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* background-color: aquamarine; */
+        /* width: 50%; */
+        margin: 2rem auto;
+    }
+    .avatar img{
+        height: 15rem;
+        width: 15rem;
+    }
+    .contactCard{
+        margin: 0rem auto;
+        width: 100%;
+    }
+    .contactCard h1{
+        font-size: 2.3rem;
+    }
+    /* Mobile standard support formatting grid */
+    .contactCard div {
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: pre-line; /* ✅ Yeh line breaks (\n) aur bullets ko unki alag rows mein layout karega */
+    text-align: left;
+    }
+    .resumeBtn {
+        margin-top: 2.5rem;
+        font-size: 1rem;
+        
+        /* Mobile Touch Target optimization (Aaram se click hone ke liye sizing) */
+        padding: 0.75rem 2rem;
+        min-width: 12rem;
+        width: auto; /* Screen ke bahar nahi jayega */
+        box-shadow: 0 4px 12px rgba(128, 0, 128, 0.3);
+    }
+}
+
+@keyframes renderFromLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes renderFromRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

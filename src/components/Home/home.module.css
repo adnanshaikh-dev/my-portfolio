@@ -1,0 +1,215 @@
+main {
+    /* height:100vh; */
+    padding-top: 1rem;
+    margin-bottom: 4.5rem;
+
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🚀 MERGED & UPDATED: Ab saari wrapper styling sirf .avatar ke andar hai */
+.avatar {
+    margin-top: 10.5rem; /* Pehle .avatarImage mein jo perfect gap set kiya tha */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center alignment standard look ke liye */
+}
+
+/* 🚀 UPDATED WITH OFFICIAL DESIGN: Image 100% rock-solid fix rahegi, sirf box-shadow dheere se breath karega */
+.avatar img {
+    margin-top: 2rem;
+    border: 5px solid purple; /* Aapka standard purple solid border color */
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    
+    /* Sleek background neon base aura setup */
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.4);
+    
+    /* 🧠 OFFICIAL: Slow elegant shadow pulse without any physical shifting or movement */
+    animation: officialGlow 4s ease-in-out infinite; 
+}
+
+/* 🚀 NEW: Marquee Banner Wrapper (Sticky under navbar inside Home) */
+.hiringMarquee {
+    position: absolute;
+    top: 5rem; /* Navbar ki height 5rem hai, theek uske neeche block hoga */
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* Professional dark banner */
+    color: #ffffff;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 999;
+    border-bottom: 2px solid purple; /* Matching portfolio accent */
+    font-size: 0.95rem;
+}
+
+/* 🚀 NEW: Ultra-Sharp Crystal Clear Scrolling Content */
+.marqueeContent {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: smoothMarquee 30s linear infinite;
+
+    /* Anti-Blur & Sharp Rendering Fixes */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.5px;
+}
+
+/* Hover karne par text ruk jayega */
+.hiringMarquee:hover .marqueeContent {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/* Pure CSS Loops Keyframes */
+@keyframes smoothMarquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* 🚀 UPDATED: Home Content ko push kiya taaki Marquee ke peeche text na chupe */
+.homeContent {
+    margin-top: 9.5rem; /* Pehle 2rem tha, marquee aane se iska space balance kiya */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 22rem;
+}
+
+.personal-info {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.homeContent h1 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.homeContent h2 {
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+#name {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.homeContent h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Icons left-aligned text ke niche rahenge */
+    width: 100%;
+}
+
+.autoText {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.connectText {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* 🔄 NEW KEYFRAMES: Shadow density levels dynamically shift for a clean corporate vibe */
+@keyframes officialGlow {
+    0% {
+        box-shadow: 0 0 20px rgba(128, 0, 128, 0.35), 0 0 40px rgba(128, 0, 128, 0.15);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(128, 0, 128, 0.6), 0 0 60px rgba(128, 0, 128, 0.3); /* Premium diffuse expansion */
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(128, 0, 128, 0.35), 0 0 40px rgba(128, 0, 128, 0.15);
+    }
+}
+
+/* For Mobile View Only */
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    
+    /* Mobile responsive navbar 4rem + marquee banner adjustment */
+    .hiringMarquee {
+        top: 4rem; 
+        height: 2.2rem;
+        font-size: 0.85rem;
+    }
+
+    .homeContent {
+        margin-top: 4.5rem; /* Mobile layout optimization */
+        width: 80%;
+    }
+    
+    .homeContent h1 {
+        font-size: 1.5rem;
+    }
+    
+    .homeContent h2 {
+        font-size: 2rem;
+    }
+    
+    .autoText {
+        font-size: 1.5rem;
+    }
+    
+    /* 🚀 MERGED MOBILE: Purani avatarImage classes yahan se hatakar clean .avatar kiya */
+    .avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 9.5rem auto 2rem auto; /* Safe layout space balances */
+    }
+
+    .avatar img {
+        height: 12rem;
+        width: 12rem;
+        margin-top: 0; /* Reset desktop top margin for mobile */
+        
+        /* Mobile settings mapped to the same animation loop */
+        box-shadow: 0 0 15px rgba(128, 0, 128, 0.4);
+        animation: officialGlow 4s ease-in-out infinite;
+    }
+    
+    .connectText {
+        margin-top: 1rem;
+    }
+    
+    .links {
+        width: 90%;
+        margin: 2rem auto;
+    }
+}

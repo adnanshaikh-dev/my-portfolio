@@ -1,0 +1,139 @@
+.contactFormCard {
+	margin: 0;
+	width: 50%; /* Perfect 50% distribution width balance next to get in touch card */
+    padding: 3rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.contactFormCard h1 {
+	text-align: left;
+    margin-left: 0;
+	font-size: 2rem !important;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+}
+
+.contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* Clean grid vertical packing rows tracking gaps */
+}
+
+/* 🚀 NEW GRID ROW LAYOUT: Inputs align in elegant side-by-side rows on desktop views */
+.inputsFormGroupRow {
+    display: flex;
+    width: 100%;
+    gap: 1.2rem;
+    box-sizing: border-box;
+}
+
+.Inputs {
+	background-color: rgba(255, 255, 255, 0.05) !important; /* 🧠 DUAL THEME ADAPTIVE: Transparents glass fits light/dark modes easily */
+	margin-left: 0;
+	margin-top: 0;
+	height: 3.5rem;
+	padding: 0 1.2rem;
+	font-size: 1rem;
+	font-weight: 600;
+    border: 1px solid rgba(128, 0, 128, 0.2);
+	border-radius: 0.5rem;
+    width: 100%; /* Autofit inside the flex parent row cells blocks safely */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.Inputs::placeholder {
+    opacity: 0.5;
+}
+
+/* Focused active target selection indicator flashes template nodes */
+.Inputs:focus {
+	outline: none;
+	border-color: purple !important;
+	background-color: rgba(128, 0, 128, 0.06) !important;
+    box-shadow: 0 0 12px rgba(128, 0, 128, 0.15);
+}
+
+.contactForm textarea {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(128, 0, 128, 0.2);
+	border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+	height: 8rem;
+    width: 100%; /* Stretches 100% full length coverage line */
+    box-sizing: border-box;
+	resize: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+	font-weight: 600;
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contactForm textarea:focus {
+	outline: none;
+	border-color: purple !important;
+	background-color: rgba(128, 0, 128, 0.06) !important;
+    box-shadow: 0 0 12px rgba(128, 0, 128, 0.15);
+}
+
+.sendBtn {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Sizing button custom override to look identical to resume pill */
+.sendBtn button {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    padding: 0.65rem 2rem !important;
+    border-radius: 2rem !important;
+    min-width: 12rem;
+}
+
+/* Validation errors indicator parameters tracking */
+.invalidInput {
+	border: 1px solid #b40e0e !important;
+    background-color: rgba(180, 14, 14, 0.05) !important;
+}
+
+.sent .Inputs, .sent textarea {
+	color: rgb(156, 156, 156) !important;
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE VIEW ONLY: Inputs compress cleanly to full stacking lanes
+   ========================================================================== */
+@media (max-width: 992px) {
+    .contactFormCard {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+	.contactFormCard {
+		width: 100%;
+        padding: 1.5rem;
+	}
+	.contactFormCard h1 {
+		font-size: 1.6rem !important;
+        margin-bottom: 1.2rem;
+	}
+    .inputsFormGroupRow {
+        flex-direction: column; /* Compresses rows down to single stacking vertical items */
+        gap: 1.2rem;
+    }
+	.Inputs, .contactForm textarea {
+		font-size: 0.92rem;
+	}
+    .sendBtn button {
+        width: 100% !important; /* Full width submission box buttons target for phone thumbs clicks */
+    }
+}

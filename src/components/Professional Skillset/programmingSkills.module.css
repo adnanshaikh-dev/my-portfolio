@@ -1,0 +1,230 @@
+/* 🚀 UPDATED MAIN COMPONENT LAYER: Fixes the fixed-navbar overlapping layout issue completely */
+.mainCard {
+    text-align: center;
+    margin-top: 5rem;
+    width: 85%; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    /* 🧠 THE CORE INTERACTIVE SCROLL FIX: Browser tracking codes alignment lines */
+    scroll-margin-top: 6.5rem; /* Navbar height 5rem + exact 1.5rem smooth cushion safety padding gap */
+}
+
+.sectionTitle {
+    font-size: 2.5rem !important;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem; /* Reduced slightly to transition into introductory text smoothly */
+}
+
+/* ==========================================================================
+   🚀 NEW STYLISH INTRODUCTORY CONTENT PANEL: Smooth editorial look layout
+   ========================================================================== */
+.skillsIntroductionPanel {
+    width:95%;
+    margin: 0 auto 4rem auto;
+    text-align: left;
+    line-height: 1.75;
+    font-size: 1.05rem;
+}
+
+.skillsIntroductionPanel p {
+    margin-bottom: 1.2rem;
+    opacity: 0.85;
+    text-align: justify;
+}
+
+.skillsIntroductionPanel strong {
+    font-weight: 700;
+}
+
+.coreCompetenciesPoints {
+    margin-top: 2rem;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.005) 100%);
+    border: 1px dashed rgba(128, 0, 128, 0.15);
+    padding: 1.5rem 2rem;
+    border-radius: 0.75rem;
+}
+
+.coreCompetenciesPoints h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.2px;
+}
+
+.bulletsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Split bullet pointers rows neatly */
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bulletRow {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.miniDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   📦 STANDALONE BLOCKS GRID INTERFACES
+   ========================================================================== */
+.dashboardGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skillBlockCard {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 2px solid; 
+    border-radius: 1.25rem;
+    padding: 1.8rem;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skillBlockCard:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.blockHeader {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.3px;
+    border-bottom: 2px dashed rgba(128, 0, 128, 0.15); 
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.skillSetCard {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.skillItem {
+    position: relative;
+    width: 8.5rem;   
+    height: 7.5rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;    
+    border: 3px solid;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.skillName {
+    display: block; 
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: center;
+    transition: color 0.2s ease;
+    padding: 0 0.2rem;
+}
+
+.skillSvgIcon {
+    height: 3rem; 
+    width: 3rem;  
+    transition: all 0.25s ease;
+}
+
+.skillItem:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    background-color: purple !important; 
+    border-color: purple !important;
+    box-shadow: 0 6px 15px rgba(128, 0, 128, 0.35);
+}
+
+.skillItem:hover .skillName,
+.skillItem:hover .skillSvgIcon {
+    color: #ffffff !important;
+    transform: scale(1.05); 
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE VIEW ONLY: Responsive single-column grid adaptations
+   ========================================================================== */
+@media (max-width: 768px) {
+    .mainCard {
+        width: 85%;
+        margin-top: 3rem;
+    }
+    .sectionTitle {
+        font-size: 2rem !important;
+        margin-bottom: 2rem;
+    }
+    .skillsIntroductionPanel {
+        font-size: 0.95rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* 🚀 THE FIXED CORE: शब्दों के बीच के अजीब गैप को पूरी तरह खत्म कर देगा */
+    .skillsIntroductionPanel p {
+        text-align: left !important; /* ✅ 'justify' हटाकर 'left' किया जिससे वर्ड्स का गैप नेचुरल हो जाएगा */
+        word-spacing: normal !important; /* एक्स्ट्रा स्पेसिंग को रीसेट करेगा */
+        line-height: 1.6; /* मोबाइल पर पढ़ने में आसानी के लिए परफेक्ट लाइन गैप */
+    }
+
+    .coreCompetenciesPoints {
+        padding: 1rem;
+    }
+    .bulletsGrid {
+        grid-template-columns: 1fr; /* Stack bullets list vertically on smartphone screen devices */
+        gap: 0.8rem;
+    }
+    .bulletRow {
+        font-size: 0.88rem;
+    }
+    .dashboardGrid {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+    }
+    .skillBlockCard {
+        padding: 1.2rem;
+    }
+    .skillSetCard {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .skillItem {
+        width: 7.5rem;
+        height: 6.5rem;
+    }
+    .skillSvgIcon {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+    .skillName {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,138 @@
+.getInTouch {
+	margin: 4rem auto 2rem auto;
+	width: 85%; /* Canvas extended dynamic margins phailane ke liye stretch limits */
+	border: 2px solid; /* Solid noticeable dashboard outline framework lines */
+	border-radius: 1.25rem; /* Clean modern rounded corners */
+	display: flex;
+    justify-content: space-between;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    scroll-margin-top: 6.5rem; 
+}
+
+.getInTouchCard {
+	margin: 3rem;
+	width: 45%;
+    text-align: left; /* Editorial alignment look */
+    box-sizing: border-box;
+}
+
+.getInTouchCard h1 {
+	font-size: 2.5rem !important;
+	font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.getInTouchCard p {
+	margin-top: 1rem;
+	font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.detailsListStack {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactCard {
+	display: flex;
+	align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.contactCard:hover {
+    transform: translateX(6px); /* Interactive horizontal slight push animation on card hover */
+}
+
+.contactIcon {
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	color: #ffffff !important; /* Vectors hardlocked to crisp absolute white colors template */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+.contactValue {
+	margin-left: 1.5rem;
+	font-size: 1.15rem;
+    font-weight: 600;
+    word-break: break-all; /* Prevents long email links cracking bounds cells dimensions */
+}
+
+/* ==========================================================================
+   🌐 FOR TABLET VIEW ONLY: Responsive single lane column block conversions
+   ========================================================================== */
+@media (max-width: 992px) {
+    .getInTouch {
+        flex-direction: column;
+        width: 90%;
+    }
+    .getInTouchCard {
+        width: 100%;
+        margin: 2rem 2rem 0 2rem;
+    }
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE VIEW ONLY: 100% Fixed Text Cutting Bug Overwrite
+   ========================================================================== */
+@media (max-width: 768px) {
+    .getInTouch {
+        scroll-margin-top: 5.5rem; 
+        border-radius: 1rem;
+    }
+    
+    /* 🚀 FIXED: Margin hatakar box-sizing layout bounds padding space set ki hai */
+	.getInTouchCard {
+		width: 100% !important;
+        margin: 0 !important; /* Hard reset bulky desktop margins */
+        padding: 1.5rem 1.5rem 0 1.5rem !important; /* Proper internal padding targeting */
+        box-sizing: border-box !important; /* Strictly locks elements inside mobile boundary walls */
+	}
+    
+    .getInTouchCard h1 {
+        font-size: 2rem !important;
+    }
+    
+    /* 🚀 FIXED: Text lines automatically squeeze and break layout words correctly now */
+    .getInTouchCard p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        width: 100%;
+        box-sizing: border-box;
+        word-break: break-word !important; /* Ensures long strings auto-wrap text cells fields */
+        overflow-wrap: break-word !important;
+        text-align: left;
+    }
+    
+    .detailsListStack {
+        margin-top: 1.8rem;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+	.contactIcon {
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+    
+    .contactIcon svg {
+        font-size: 1.5rem !important;
+    }
+    
+	.contactValue {
+        margin-left: 1rem;
+		font-size: 0.95rem;
+	}
+}

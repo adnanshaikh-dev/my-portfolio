@@ -1,0 +1,315 @@
+/* ==========================================================================
+   📦 STANDARD CORE BASE CARD DESIGN SYSTEMS
+   ========================================================================== */
+.projectItem {
+    width: 100%; 
+    min-height: 14.5rem; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(128, 0, 128, 0.15); 
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.projectItem:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    border-color: rgba(128, 0, 128, 0.4);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05), 0 0 20px rgba(128, 0, 128, 0.05);
+}
+
+.cardUpperMeta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.projectItem h2 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    line-height: 1.3;
+    margin-bottom: 0.6rem;
+}
+
+.description {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.85; 
+    margin-bottom: 0.8rem;
+}
+
+.dateUpdated {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    opacity: 0.9;
+    margin-bottom: 1.2rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: auto; 
+}
+
+/* Alternative 1: Solid Purple Pill Button Layout */
+.detailsCtaBtn {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    
+    /* 🔮 Permanent Solid Background Framework */
+    background: linear-gradient(135deg, purple 0%, #a121c1 100%) !important;
+    color: #ffffff !important; /* Text is now sharp solid white */
+    
+    box-shadow: 0 4px 10px rgba(128, 0, 128, 0.2);
+    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.detailsCtaBtn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #a121c1 0%, purple 100%) !important; /* Hover toggle gradient colors flip */
+    box-shadow: 0 6px 15px rgba(161, 33, 193, 0.45);
+    filter: brightness(110%);
+}
+
+
+/* ==========================================================================
+   🎬 🚀 NEW SCREEN LAYOUT: Expanded Canvas Modal Overlay Architecture
+   ========================================================================== */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.55); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2005 !important; 
+    animation: fadeInBackground 0.3s ease forwards;
+}
+
+/* 🚀 EXPANDED CONTENT CARD BOX: Increased size from 600px to 720px to host rich details */
+.modalContentCard {
+    width: 90%;
+    max-width: 720px; /* Bigger layout box area sizes */
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Core font lock override */
+    animation: popUpScaleOpen 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 🧠 THEME BLENDS FOR LIGHT MODE: Crystal clear background font scaling adjustments */
+.lightCardFrame {
+    /* 🚀 FIXED: Cream color hatakar strict pure solid white surface box kiya hai */
+    background-color: #ffffff !important;
+    
+    /* Elegant thin dynamic border grid line matching your tabs */
+    border: 2px solid rgba(128, 0, 128, 0.2) !important;
+    
+    /* 🔮 ATTRACTIVE GLOW: Back shadow ko thoda dense aur dynamic soft purple kiya hai */
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1), 0 0 30px rgba(128, 0, 128, 0.08) !important;
+}
+
+/* THEME BLENDS FOR DARK MODE: Slate obsidian obsidian configurations */
+.darkCardFrame {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 🚀 FIXED CROSS TRIGGER LAYOUT: Anchored safely INSIDE the inner bounding boxes */
+.modalCloseXBtn {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem; /* Shipped inside bounds completely */
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.25s ease, filter 0.2s ease;
+}
+
+.modalCloseXBtn:hover {
+    transform: scale(1.1) rotate(90deg);
+    filter: brightness(110%);
+}
+
+.modalImageSection {
+    width: 100%;
+    height: 16rem; /* Scaled proportionately for bigger cards */
+    background-color: rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border-bottom: 1px solid rgba(128, 0, 128, 0.1);
+}
+
+.modalImageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.modalBodySection {
+    padding: 2.2rem; /* Clean text spacing alignment */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.modalMetaHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.modalMetaHeader h2 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.modalTechTag {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    opacity: 0.85;
+}
+
+/* 🚀 CRISP FONT RENDERING SYSTEM WITH CUSTOM INTERIOR SCROLLBARS */
+.modalFullTextDescription {
+    font-size: 1.02rem;
+    font-weight: 500;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    text-align: justify;
+    max-height: 14rem; /* Scaled up limits */
+    overflow-y: auto;
+    padding-right: 0.6rem;
+}
+
+/* Custom scrollbars for full details paragraphs area text modules */
+.modalFullTextDescription::-webkit-scrollbar {
+    width: 5px;
+}
+.modalFullTextDescription::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 0, 128, 0.25);
+    border-radius: 10px;
+}
+
+.modalFooterControls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Right edge lock alignment */
+    width: 100%;
+    border-top: 1px solid rgba(128, 0, 128, 0.1);
+    padding-top: 1.2rem;
+    box-sizing: border-box;
+}
+
+.footerSpacer {
+    flex-grow: 1;
+}
+
+.modalMainCloseBtn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.modalMainCloseBtn:hover {
+    transform: translateY(-1px);
+    filter: brightness(110%);
+}
+
+/* Animations pathway framework tracks */
+@keyframes fadeInBackground {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes popUpScaleOpen {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(12px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE VIEW ONLY: Responsive fit constraints
+   ========================================================================== */
+@media (max-width: 768px) {
+    .projectItem {
+        min-height: 13rem;
+        padding: 1.2rem;
+    }
+    .projectItem h2 { font-size: 1.2rem; }
+    .description { font-size: 0.88rem; }
+    .dateUpdated { font-size: 0.72rem; }
+    .detailsCtaBtn { font-size: 0.8rem; padding: 0.4rem 0.95rem; }
+
+    /* Mobile modal overlays fit grid layouts adjustments */
+    .modalContentCard {
+        width: 92%; 
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+    .modalImageSection {
+        height: 9.5rem; 
+    }
+    .modalBodySection {
+        padding: 1.4rem; 
+    }
+    .modalMetaHeader h2 {
+        font-size: 1.4rem;
+    }
+    .modalFullTextDescription {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        max-height: 11rem;
+    }
+    .modalFooterControls {
+        padding-top: 1rem;
+    }
+    .modalMainCloseBtn {
+        width: 100%; 
+        padding: 0.7rem 0;
+        font-size: 0.95rem;
+    }
+}

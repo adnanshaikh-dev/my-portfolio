@@ -1,0 +1,117 @@
+.mainWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* 🚀 Swapped out Barlow Condensed for crisp elite Poppins typography */
+}
+
+.projects {
+	padding-top: 6rem;
+	margin: 0rem auto;
+	display: flex;
+	width: 85%;
+	align-items: center;
+	justify-content: space-between;
+	gap: 4rem;
+}
+
+.projectImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.projectImg img {
+	height: auto;
+    width: 100%;
+    max-width: 28rem;
+    object-fit: contain;
+}
+
+.projectHeader {
+	width: 50%;
+	text-align: left; /* 🚀 Editorial style left-aligned headers are much more professional */
+	font-weight: 500;
+    line-height: 1.6;
+}
+
+.projectHeader h1 {
+	font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.projectHeader div {
+	margin-top: 1.5rem;
+	font-size: 1.15rem;
+    opacity: 0.85;
+}
+
+.projectHeading {
+	font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+	text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* 🚀 DESIGN FIX: Modern responsive automatic card deck layout spacing grids */
+.projectList {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Clean 3-Columns arrangement for seamless desktop occupancy */
+	gap: 2rem;
+	justify-content: center;
+	margin: 2rem auto 4rem auto;
+	width: 85%;
+    box-sizing: border-box;
+}
+
+.moreProject {
+	display: flex;
+	justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   🌐 FOR MOBILE RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 992px) {
+    .projectList {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns grid for medium tablets */
+    }
+}
+
+@media (max-width: 768px) {
+	.projects {
+		margin: 0rem auto;
+		flex-direction: column-reverse; /* Reverses order so typography text reads on top of graphics on mobile */
+		width: 90%;
+        gap: 2rem;
+        padding-top: 4rem;
+	}
+	.projectImg img {
+		margin-top: 1rem;
+		height: auto;
+	}
+	.projectHeader {
+		width: 100%;
+        text-align: center;
+	}
+    .projectHeader h1 {
+        font-size: 2rem;
+    }
+	.projectHeader div {
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+    .projectHeading {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+    }
+    .projectList {
+        grid-template-columns: 1fr; /* 1 Column full row stretch line configuration for mobile views */
+        width: 90%;
+        gap: 1.5rem;
+    }
+}
