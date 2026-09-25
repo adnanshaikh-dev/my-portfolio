@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.1e564915.css",
-    "main.js": "/my-portfolio/static/js/main.b4ee8edc.js",
+    "main.css": "/my-portfolio/static/css/main.b91ab766.css",
+    "main.js": "/my-portfolio/static/js/main.98eeeb33.js",
     "static/media/hnguLogo.png": "/my-portfolio/static/media/hnguLogo.7058c2e4055836542eb8.png",
     "static/media/schoolLogo.png": "/my-portfolio/static/media/schoolLogo.de226e496a87dabda934.png",
     "static/media/dp.jpeg": "/my-portfolio/static/media/dp.adf0b46dc07b5ea31b11.jpeg",
@@ -12,12 +12,18 @@
     "static/media/c4.png": "/my-portfolio/static/media/c4.2ff88e10ca22606edae8.png",
     "static/media/c5.png": "/my-portfolio/static/media/c5.c20d13cee898b4c4a736.png",
     "static/media/project-cover10.png": "/my-portfolio/static/media/project-cover10.aee0f771fbfc1e7b8fa8.png",
+    "static/media/poppins-devanagari-400-normal.woff": "/my-portfolio/static/media/poppins-devanagari-400-normal.421fe9869ff4b58e2d7b.woff",
+    "static/media/poppins-devanagari-400-normal.woff2": "/my-portfolio/static/media/poppins-devanagari-400-normal.d2ee5e6ea17bffe3bf58.woff2",
+    "static/media/poppins-latin-400-normal.woff": "/my-portfolio/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
+    "static/media/poppins-latin-400-normal.woff2": "/my-portfolio/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff": "/my-portfolio/static/media/poppins-latin-ext-400-normal.7e12786771ac4a8e6a5c.woff",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/my-portfolio/static/media/poppins-latin-ext-400-normal.d7c074a9c34fe9785f69.woff2",
     "index.html": "/my-portfolio/index.html",
-    "main.1e564915.css.map": "/my-portfolio/static/css/main.1e564915.css.map",
-    "main.b4ee8edc.js.map": "/my-portfolio/static/js/main.b4ee8edc.js.map"
+    "main.b91ab766.css.map": "/my-portfolio/static/css/main.b91ab766.css.map",
+    "main.98eeeb33.js.map": "/my-portfolio/static/js/main.98eeeb33.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e564915.css",
-    "static/js/main.b4ee8edc.js"
+    "static/css/main.b91ab766.css",
+    "static/js/main.98eeeb33.js"
   ]
 }
