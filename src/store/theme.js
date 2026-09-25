@@ -5,7 +5,7 @@ const initialThemeState={
     uiColor:'purple',
     theme:{
         color:'rgb(0, 31, 63)',
-        backgroundColor:"rgb(237, 249, 254)",
+        backgroundColor:"white",
     },
     nonThemeColor:'black'
 };

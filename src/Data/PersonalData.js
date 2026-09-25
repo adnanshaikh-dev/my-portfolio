@@ -20,5 +20,11 @@ Want to know more about my projects and technical journey? Click the button belo
     resumeLink: '/Adnan_Resume.pdf',
     imageUrl: ''
 }
-export const autoTypeData = ['a DotNet Developer', 'a Full-Stack Developer', 'a Web Developer', 'a Quick Learner', 'an Immediate Joiner'];
+export const autoTypeData = [
+    '<strong style="font-weight:600;">a DotNet Developer</strong>',
+    '<strong style="font-weight:600;">a Full-Stack Developer</strong>',
+    '<strong style="font-weight:600;">a Web Developer</strong>',
+    '<strong style="font-weight:600;">a Quick Learner</strong>',
+    '<strong style="font-weight:600;">an Immediate Joiner</strong>'
+];
 export default PersonalData;

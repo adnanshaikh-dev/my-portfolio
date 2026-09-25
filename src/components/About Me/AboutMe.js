@@ -11,7 +11,7 @@ const AboutMe = () => {
   const uiColor = useSelector((state) => state.uiColor);
 
   const handleResumeView = () => {
-    window.open("/Portfolio/Adnan_Resume.pdf", "_blank", "noopener,noreferrer");
+    window.open("/my-portfolio/Adnan_Resume.pdf", "_blank", "noopener,noreferrer");
   };
 
   return (

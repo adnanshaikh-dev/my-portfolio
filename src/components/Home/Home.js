@@ -32,8 +32,8 @@ function Home(props) {
             {/* Professional Smooth Marquee Banner using CSS Modules */}
             <div className={classes.hiringMarquee}>
                 <div className={classes.marqueeContent}>
-                    🚀 Actively looking for the DotNet Developer opportunities or any suitable opportunity! Open to work with reasonable salary package and available to join immediately for full-time roles. &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
-                    🚀 Actively looking for the DotNet Developer opportunities or any suitable opportunity! Open to work with reasonable salary package and available to join immediately for full-time roles. &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+                    • Actively looking for the DotNet Developer opportunities or any suitable opportunity! Open to work for full-time roles and available to join immediately. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    • Actively looking for the DotNet Developer opportunities or any suitable opportunity! Open to work for full-time roles and available to join immediately. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
 
