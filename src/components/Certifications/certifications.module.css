@@ -242,8 +242,8 @@
 }
 
 @media (max-width: 768px) {
-    .certificationsMain { width: 92%; padding-top: 1rem; }
-    .sectionTitle { font-size: 1.80rem !important; margin-bottom: 1.5rem; }
+    .certificationsMain { width: 90%; padding-top: 1rem; }
+    .sectionTitle { font-size: 1.70rem !important; margin-bottom: 1.5rem; }
     
     /* 🚀 FIXED MOBILE TEXT: text-align left completely resolves font spacing gaps */
     .certIntroPanel {
@@ -257,10 +257,10 @@
     }
 
     .topicsTextList { gap: 0.5rem; margin-bottom: 2rem; }
-    .topicChip { font-size: 0.82rem; padding: 0.4rem 1rem; }
+    .topicChip { font-size: 0.72rem; padding: 0.5rem 1rem; }
     .analyticsSidePanel { flex-direction: column; padding: 1rem; gap: 1rem; }
     .metricCard { padding: 0.8rem; width: 100%; box-sizing: border-box; }
-    .metricTexts h3 { font-size: 1rem; font-weight: 800; margin: 0; }
+    .metricTexts h3 { font-size: 0.92rem; font-weight: 800; margin: 0; }
     .metricTexts p { font-size: 0.75rem; font-weight: 600; opacity: 0.7; margin: 0.1rem 0 0 0; }
     
     .carouselFrameworkBox { 

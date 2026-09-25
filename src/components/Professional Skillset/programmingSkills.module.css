@@ -176,19 +176,18 @@
    ========================================================================== */
 @media (max-width: 768px) {
     .mainCard {
-        width: 85%;
+        width: 90%;
         margin-top: 3rem;
     }
     .sectionTitle {
-        font-size: 2rem !important;
-        margin-bottom: 2rem;
+        font-size: 1.80rem !important;
+        margin-bottom: 1rem;
     }
     .skillsIntroductionPanel {
-        font-size: 0.95rem;
+        font-size: 0.92rem;
         margin-bottom: 2.5rem;
     }
 
-    /* 🚀 THE FIXED CORE: शब्दों के बीच के अजीब गैप को पूरी तरह खत्म कर देगा */
     .skillsIntroductionPanel p {
         text-align: left !important; /* ✅ 'justify' हटाकर 'left' किया जिससे वर्ड्स का गैप नेचुरल हो जाएगा */
         word-spacing: normal !important; /* एक्स्ट्रा स्पेसिंग को रीसेट करेगा */

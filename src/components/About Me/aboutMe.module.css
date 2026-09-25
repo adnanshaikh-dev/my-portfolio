@@ -2,7 +2,7 @@
     /* padding-top: 1rem; */
     margin: 0rem auto;
     /* background-color: aqua; */
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-around;
     scroll-margin-top: 2rem;
@@ -31,6 +31,7 @@
 }
 .contactCard h1{
     font-size: 3rem;
+    font-weight: 800;
 }
 
 /* 🚀 ONLY THIS CLASS IS MODIFIED: Baaki sab bilkul same hai */
@@ -53,7 +54,7 @@
     width: 20rem;
 }
 .resumeBtn {
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
@@ -92,8 +93,8 @@
 @media (max-width:768px) {
     .contactMe{
         flex-direction: column;
-        padding-top: 3rem;
-        scroll-margin-top: 3rem;
+        padding-top: 0rem;
+        scroll-margin-top: 4rem;
     }
     .avatar{
         display: flex;
@@ -112,25 +113,33 @@
         width: 100%;
     }
     .contactCard h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     /* Mobile standard support formatting grid */
     .contactCard div {
-    margin-top: 1rem;
-    font-weight: 500;
-    font-size: 1rem;
-    white-space: pre-line; /* ✅ Yeh line breaks (\n) aur bullets ko unki alag rows mein layout karega */
-    text-align: left;
+        margin-top: 1rem;
+        font-weight: 400;
+        font-size: 0.92rem;
+        width: 100%;
+        white-space: pre-line; /* ✅ Yeh line breaks (\n) aur bullets ko unki alag rows mein layout karega */
+        text-align: left;
     }
     .resumeBtn {
-        margin-top: 2.5rem;
-        font-size: 1rem;
+        margin-top: 1.8rem !important; /* Spacing thodi kam ki taaki layout compact lage */
+        font-size: 0.95rem !important; /* Elegant clear text size */
         
-        /* Mobile Touch Target optimization (Aaram se click hone ke liye sizing) */
-        padding: 0.75rem 2rem;
-        min-width: 12rem;
-        width: auto; /* Screen ke bahar nahi jayega */
-        box-shadow: 0 4px 12px rgba(128, 0, 128, 0.3);
+        /* Padding aur Min-Width ko reduce kiya taaki button screen par bulkier na lage */
+        padding: 0.6rem 1.5rem !important; 
+        min-width: 9rem !important; 
+        max-width: max-content !important;
+        width: auto !important;
+        
+        border-radius: 2rem !important; /* Perfect capsule pill look standard design */
+        box-shadow: 0 4px 10px rgba(128, 0, 128, 0.25) !important; /* Subtle premium soft glow */
+        text-align: center !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 }
 

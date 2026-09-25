@@ -138,7 +138,7 @@ main {
 .connectText {
     margin-top: 2rem;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* 🔄 NEW KEYFRAMES: Shadow density levels dynamically shift for a clean corporate vibe */
@@ -175,11 +175,11 @@ main {
     }
     
     .homeContent h1 {
-        font-size: 1.30rem;
+        font-size: 1.50rem;
     }
     
     .homeContent h2 {
-        font-size: 1.30rem;
+        font-size: 1.50rem;
     }
     
     .autoText {
@@ -195,8 +195,8 @@ main {
     }
 
     .avatar img {
-        height: 10rem;
-        width: 10rem;
+        height: 11rem;
+        width: 11rem;
         margin-top: 0; /* Reset desktop top margin for mobile */
         
         /* Mobile settings mapped to the same animation loop */
@@ -211,6 +211,6 @@ main {
     
     .links {
         width: 90%;
-        margin: 2rem auto;
+        margin: 1.70rem auto;
     }
 }

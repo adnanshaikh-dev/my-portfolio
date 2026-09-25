@@ -41,7 +41,7 @@ function Degree(props) {
         },
         {
             duration: "2018 - 2020",
-            institute: "Ashish Vidhyalaya, Patan",
+            institute: "Aashish Vidhyalaya, Patan",
             course: "Higher Secondary Certificate (HSC) - Commerce",
             scoreType: "Percentage",
             scoreValue: "74.86%",

@@ -92,10 +92,12 @@
 	cursor: pointer;
 }
 #lightModeBtn {
+	margin-top: 0.3rem;
 	margin-left: 0.5rem;
 	margin-right: auto;
 }
 #darkModeBtn {
+	margin-top: 0.3rem;
 	margin-left: auto;
 	margin-right: 0.5rem;
 }

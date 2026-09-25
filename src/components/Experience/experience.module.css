@@ -200,18 +200,18 @@
    ========================================================================== */
 @media (max-width: 768px) {
     .experienceMain {
-        width: 85%;
-        padding-top: 3rem;
+        width: 90%;
+        padding-top: 2rem;
         margin-top: 2rem;
     }
     .sectionTitle {
-        font-size: 2rem !important;
-        margin-bottom: 2.5rem;
+        font-size: 1.80rem !important;
+        margin-bottom: 1rem;
     }
     
     /* Mobile font text spacing fix (text-align: left eliminates huge word gaps) */
     .experienceIntroductionPanel {
-        font-size: 0.95rem;
+        font-size: 0.92rem;
         margin-bottom: 2.5rem;
     }
     .experienceIntroductionPanel p {
@@ -230,14 +230,14 @@
         font-size: 0.88rem;
     }
     
-    .timelineRow { gap: 0.8rem; }
+    .timelineRow { gap: 0.5rem; }
     .verticalConnectLine { min-height: 25rem; }
-    .glowingNodePulse { width: 2.4rem; height: 2.4rem; }
-    .axisIconVector { font-size: 1.1rem; }
+    .glowingNodePulse { width: 1.70rem; height: 1.70rem; }
+    .axisIconVector { font-size: 1rem; }
     .experienceWrapperCard { padding: 1.2rem; border-radius: 1rem; }
     .expHeaderMeta { flex-direction: column; align-items: flex-start; gap: 1rem; padding-bottom: 1rem; }
     .roleTitle { font-size: 1.25rem; }
-    .companySubGroup { font-size: 0.95rem; }
+    .companySubGroup { font-size: 0.85rem; }
     .durationGroup { font-size: 0.8rem; padding: 0.35rem 0.85rem; }
     .techPillTag { font-size: 0.75rem; padding: 0.25rem 0.75rem; }
     .expDetailsList { font-size: 0.88rem; padding-left: 1rem; gap: 0.5rem; text-align: left !important; }

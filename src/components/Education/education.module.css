@@ -34,7 +34,6 @@
 .educationCard h1 {
     font-size: 3rem; /* 🚀 Scaled down from 5rem to stop messy wrap collapses */
     font-weight: 800;
-    letter-spacing: -1px;
 }
 
 .educationCard h2 {
@@ -116,7 +115,7 @@
     }
     
     .eduImg {
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
     }
     
@@ -130,12 +129,28 @@
     }
     
     .educationCard h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .educationCard h2 {
-        font-size: 1.15rem;
+        font-size: 1rem;
         margin-top: 1rem;
         text-align: center;
+    }
+    .progressBar label {
+        text-align: left;
+        font-size: 0.90rem;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+    }
+    .percentBadge {
+        font-size: 0.70rem;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.4rem;
+        min-width: 2.2rem;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(128, 0, 128, 0.2);
     }
 }

@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import store from './store/theme';
 
+import '@fontsource/poppins';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
